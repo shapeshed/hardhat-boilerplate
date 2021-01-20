@@ -1,4 +1,8 @@
 node_modules
+.env
+
+coverage
+coverage.json
 
 #Buidler files
 cache
