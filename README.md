@@ -1,3 +1,3 @@
-# Builder Boilerplate
+# Hardhat Boilerplate
 
-A boilerplate buidler project with typescript.
+A boilerplate hardhat project with typescript.
