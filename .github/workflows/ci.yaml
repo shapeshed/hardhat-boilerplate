@@ -11,6 +11,8 @@ jobs:
       - run: mv .env.example .env
       - run: npm install
       - run: npm test
+      - run: npm run lint
+      - run: npm run format
       - run: npm run coverage
 
       - name: Upload coverage to Codecov
