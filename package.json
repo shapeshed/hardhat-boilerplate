@@ -7,6 +7,8 @@
     "build": "npm run clean && npm run compile",
     "clean": "npx hardhat clean",
     "compile": "npx hardhat compile",
+    "lint": "npx solhint contracts/*.sol",
+    "format": "prettier --check \"contracts/**/*.sol\" \"**/*.js\" \"**/*.md\" \"**/*.yml\"",
     "test": "npx hardhat test",
     "coverage": "npm run build && npx hardhat coverage --temp artifacts --network coverage"
   },
@@ -28,6 +30,7 @@
     "hardhat-typechain": "^0.3.3",
     "prettier": "^2.2.1",
     "prettier-plugin-solidity": "^1.0.0-beta.3",
+    "solhint": "^3.3.2",
     "solidity-coverage": "^0.7.14",
     "ts-generator": "^0.1.1",
     "ts-node": "^9.1.1",

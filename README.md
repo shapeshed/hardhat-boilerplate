@@ -5,14 +5,14 @@
 
 A boilerplate hardhat project with sane defaults.
 
-* [solhint][1]
-* [prettier][2]
-* [typescript][4]
-* [typechain][3]
+- [solhint][1]
+- [prettier][2]
+- [typescript][4]
+- [typechain][3]
 
 # Prerequisities
 
-* [Node.js][5]
+- [Node.js][5]
 
 # Install
 
