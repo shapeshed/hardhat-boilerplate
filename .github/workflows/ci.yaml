@@ -11,7 +11,7 @@ jobs:
       - run: mv .env.example .env
       - run: npm install
       - run: npm test
-      - run: npm coverge
+      - run: npm run coverge
 
         #      - name: Upload coverage to Codecov
         #uses: codecov/codecov-action@v1
