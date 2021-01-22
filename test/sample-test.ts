@@ -1,14 +1,12 @@
 import { ethers } from "hardhat";
 import { solidity } from "ethereum-waffle";
 import chai from "chai";
-import mocha from "mocha";
-
 import { Greeter } from "../typechain/Greeter";
 
 chai.use(solidity);
 const { expect } = chai;
 
-describe("Greeter", function () {
+describe("Greeter", async () => {
   let greeter: Greeter;
   beforeEach(async () => {
     const greeterFactory = await ethers.getContractFactory("Greeter");
@@ -16,7 +14,12 @@ describe("Greeter", function () {
     await greeter.deployed();
   });
 
-  it("should do something right", async function () {
+  it("should return the greeting", async () => {
     expect(await greeter.greet()).to.equal("Hello, world!");
+  });
+
+  it("should return the new greeting once changed", async () => {
+    await greeter.setGreeting("Hola, mundo!");
+    expect(await greeter.greet()).to.equal("Hola, mundo!");
   });
 });
