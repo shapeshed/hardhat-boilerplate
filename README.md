@@ -12,15 +12,15 @@ A boilerplate hardhat project with sane defaults.
 - [typechain][3]
 - [dotenv][7]
 
-# Prerequisities
+## Prerequisities
 
 - [Node.js][5]
 
-# Install
+## Install
 
     npm install
 
-# Tasks
+## Tasks
 
 Build the project
 
