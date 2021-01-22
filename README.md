@@ -10,6 +10,7 @@ A boilerplate hardhat project with sane defaults.
 - [prettier][2]
 - [typescript][4]
 - [typechain][3]
+- [dotenv][7]
 
 # Prerequisities
 
@@ -47,3 +48,4 @@ Generate code coverage
 [4]: https://hardhat.org/plugins/hardhat-typechain.html
 [5]: https://nodejs.org/
 [6]: https://eslint.org/
+[7]: https://www.npmjs.com/package/dotenv
