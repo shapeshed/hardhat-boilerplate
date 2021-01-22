@@ -6,6 +6,7 @@
 A boilerplate hardhat project with sane defaults.
 
 - [solhint][1]
+- [eslint][6]
 - [prettier][2]
 - [typescript][4]
 - [typechain][3]
@@ -18,8 +19,31 @@ A boilerplate hardhat project with sane defaults.
 
     npm install
 
+# Tasks
+
+Build the project
+
+    npm run build
+
+Run tests
+
+    npm test
+
+Lint solidity and typescript code
+
+    npm run lint
+
+Check file formatting
+
+    npm run lint
+
+Generate code coverage
+
+    npm run coverage
+
 [1]: https://protofire.github.io/solhint/
 [2]: https://prettier.io/
 [3]: https://www.typescriptlang.org/
 [4]: https://hardhat.org/plugins/hardhat-typechain.html
 [5]: https://nodejs.org/
+[6]: https://eslint.org/
