@@ -1,14 +1,22 @@
 import { ethers } from "hardhat";
-import { Signer } from "ethers";
+import { solidity } from "ethereum-waffle";
+import chai from "chai";
+import mocha from "mocha";
 
-describe("Token", function () {
-  let accounts: Signer[];
+import { Greeter } from '../typechain/Greeter';
 
-  beforeEach(async function () {
-    accounts = await ethers.getSigners();
-  });
+chai.use(solidity);
+const { expect} = chai;
 
-  it("should do something right", async function () {
-    // Do something with the accounts
-  });
+describe("Greeter", function () {
+    let greeter: Greeter;
+    beforeEach(async()=>{
+        const greeterFactory = await ethers.getContractFactory("Greeter");  
+        greeter = (await greeterFactory.deploy("Hello, world!")) as Greeter;
+        await greeter.deployed();
+    })
+
+    it("should do something right", async function () {
+        expect(await greeter.greet()).to.equal("Hello, world!");
+    });
 });
