@@ -8,6 +8,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 10.22.0
+      - run: mv .env.example .env
       - run: npm install
       - run: npm test
       - run: npm coverge
